@@ -101,6 +101,39 @@ img {
   margin: 1rem 0;
 }
 
+/* overlay section */
+.overlay-section {
+  position: relative;
+  background: url('../img/overlay-img.jpg') no-repeat bottom center/cover;
+  height: 600px;
+}
+
+.overlay-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem;
+}
+
+.overlay-inner h3 {
+  font-size: 2rem;
+}
+
+.overlay-inner h2 {
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.overlay-inner p {
+  font-size: 1.5rem;
+}
+
 /* utilities */
 .btn {
   display: inline-block;
@@ -117,13 +150,13 @@ img {
   background: var(--secondary-color);
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: var(--overlay-color);
-}
+} */
 
 /* media queries */
