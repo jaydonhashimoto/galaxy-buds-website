@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/simplelightbox.min.css" />
     <script src="https://kit.fontawesome.com/fdf914ff46.js"></script>
     <title>Samsung Galaxy Buds</title>
   </head>
@@ -18,14 +19,16 @@
       <div class="container">
         <h1 class="logo">Galaxy Buds</h1>
         <ul class="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#overlay">Overlay</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- showcase -->
-    <section class="showcase">
+    <section class="showcase" id="showcase">
       <div class="container">
         <div>
           <h1>Lorem ipsum dolor sit amet.</h1>
@@ -42,7 +45,7 @@
     </section>
 
     <!-- overlay text -->
-    <section class="overlay-section">
+    <section class="overlay-section" id="overlay">
       <div class="overlay">
         <div class="overlay-inner">
           <h3>Lorem, ipsum dolor.</h3>
@@ -56,6 +59,39 @@
       </div>
     </section>
 
+    <!-- gallery section -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <a href="https://i.ibb.co/CHLBZnp/gal2323.jpg" class="big"
+          ><img src="https://i.ibb.co/CHLBZnp/gal2323.jpg" alt=""
+        /></a>
+        <a href="https://i.ibb.co/4pBbhfY/gal39834.jpg" class="big"
+          ><img src="https://i.ibb.co/4pBbhfY/gal39834.jpg" alt=""
+        /></a>
+        <a href="https://i.ibb.co/xSnHP7g/gal43884.jpg" class="big"
+          ><img src="https://i.ibb.co/xSnHP7g/gal43884.jpg" alt=""
+        /></a>
+        <a href="https://i.ibb.co/QN6Bnrb/gal4958.jpg" class="big"
+          ><img src="https://i.ibb.co/QN6Bnrb/gal4958.jpg" alt=""
+        /></a>
+        <a href="https://i.ibb.co/dGZvj75/gal4545.jpg" class="big">
+          <img src="https://i.ibb.co/dGZvj75/gal4545.jpg" alt=""
+        /></a>
+        <a href="https://i.ibb.co/S6FVFNt/gal74744.jpg" class="big"
+          ><img src="https://i.ibb.co/S6FVFNt/gal74744.jpg" alt=""
+        /></a>
+      </div>
+    </section>
+
     <script src="js/main.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    </script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+        $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+        })
+    </script>
   </body>
 </html>
