@@ -1,6 +1,6 @@
 //execute myFunction when user scrolls
 window.onscroll = () => {
-  myFunction();
+  setSticky();
 };
 
 //get nav
@@ -11,7 +11,7 @@ const sticky = nav.offsetTop;
 
 //add sticky class to nav when scroll position is reached.
 //remove sticky when moved from scroll position
-function myFunction() {
+function setSticky() {
   if (window.pageYOffset > sticky) {
     nav.classList.add('sticky');
   } else {
