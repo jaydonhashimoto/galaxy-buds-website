@@ -49,6 +49,8 @@ img {
 .topnav {
   font-size: 1.2rem;
   padding: 0.3rem 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 3;
 }
 
 .topnav .container {
@@ -77,6 +79,21 @@ img {
 
 .topnav .nav a:hover {
   color: #555;
+}
+
+/* The sticky class is added to the header with JS 
+when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent 
+sudden quick movement (as the header gets a new position 
+at the top of the page (position:fixed and top:0) */
+.sticky + .container {
+  padding-top: 102px;
 }
 
 /* showcase section */
